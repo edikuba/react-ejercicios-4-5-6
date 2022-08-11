@@ -1,22 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import Clock from './components/pure/clock';
+import Clockhook from './hooks/clockhook';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {/* Componente Class */}
+        {/* <Clock></Clock> */}
+        {/* Compnente funcional */}
+        <Clockhook></Clockhook>
       </header>
     </div>
   );
